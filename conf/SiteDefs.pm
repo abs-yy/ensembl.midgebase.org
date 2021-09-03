@@ -13,6 +13,7 @@ sub update_conf {
     
     
     $SiteDefs::ASSEMBLY_GROUP_A = [
+            'Polypedilum_vanderplanki_Pv_5.2',
             'Polypedilum_pembai_pp1',
             'Polypedilum_nubifer_pn09',
             'Chironomus_riparius_ASM101450',
