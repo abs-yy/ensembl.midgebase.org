@@ -48,15 +48,15 @@ sub content {
   my $download_url = $self->hub->species_defs->DOWNLOAD_URL;
   my $project_url = $self->hub->species_defs->PROJECT_URL;
   my $project_url_title = $self->hub->species_defs->PROJECT_URL_TITLE;
-#  my $jbrowse_url = $self->hub->species_defs->JBROWSE_URL;
-#  my $jbrowse_url_title = $self->hub->species_defs->JBROWSE_URL_TITLE;
+  my $jbrowse_url = $self->hub->species_defs->JBROWSE_URL;
+  my $jbrowse_url_title = $self->hub->species_defs->JBROWSE_URL_TITLE;
 
   my $help_url = $self->hub->species_defs->HELP_URL;
   push @links,   '<a href="'.$blast_url.'" title="BLAST"><div class="lb-menu-category"><img title="tools" src="/i/tools-icon.png" class="lb-menu-linkicon"/>BLAST</div></a>';
   push @links,   '<a href="'.$download_url.'" title="Download"><div class="lb-menu-category"><img title="download" src="/i/download-icon.png" class="lb-menu-linkicon"/>Downloads</div></a>';
   push @links,   '<a href="'.$project_url.'" title="$project_url_title"><div class="lb-menu-category"><img title="'.$project_url_title.'" src="/i/project-icon.png" class="lb-menu-linkicon"/>'.$project_url_title.'</div></a>';
 # comment out as no help site yet
-#  push @links,   '<a href="'.$jbrowse_url.'" title="$project_url_title"><div class="lb-menu-category"><img title="'.$jbrowse_url_title.'" src="/i/project-icon.png" class="lb-menu-linkicon"/>'.$jbrowse_url_title.'</div></a>';
+  push @links,   '<a href="'.$jbrowse_url.'" title="$project_url_title"><div class="lb-menu-category"><img title="'.$jbrowse_url_title.'" src="/i/project-icon.png" class="lb-menu-linkicon"/>'.$jbrowse_url_title.'</div></a>';
 
 #  push @links,   '<a href="'.$help_url.'" title="Help"><div class="lb-menu-category"><img title="lepbase" src="/i/help-icon.png" class="lb-menu-linkicon"/>Help</div></a>';
 
